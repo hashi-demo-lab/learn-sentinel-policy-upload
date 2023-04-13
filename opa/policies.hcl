@@ -8,3 +8,7 @@ policy "public_ingress" {
   enforcement_level = "mandatory"
 }
 
+policy "instance_type" {
+  query = "data.terraform.policies.instance_rules.allow"
+  enforcement_level = "mandatory"
+}
