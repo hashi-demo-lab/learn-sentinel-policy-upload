@@ -9,6 +9,6 @@ policy "public_ingress" {
 }
 
 policy "instance_type" {
-  query = "data.terraform.policies.instance_rules.allow"
+  query = "data.terraform.policies.instance_rules.deny"
   enforcement_level = "mandatory"
 }
