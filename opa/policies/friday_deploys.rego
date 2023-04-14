@@ -5,4 +5,5 @@ deny[msg] {
   log:= "test print otuput"
   msg := {"No deployments allowed on Fridays",
           "log":sprintf("%v", [log]),
-            }
+        }
+}
