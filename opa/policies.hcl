@@ -10,5 +10,5 @@ policy "public_ingress" {
 
 policy "instance_type" {
   query = "data.terraform.policies.instance_rules.deny"
-  enforcement_level = "soft-advisory"
+  enforcement_level = "soft-mandatory"
 }
