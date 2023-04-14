@@ -1,5 +1,7 @@
 package terraform.policies.friday_deploys
+import loader
 
+json_data := loader.load_json("./test.json")
 denyDay := "Friday"
 
 deny[msg] {
