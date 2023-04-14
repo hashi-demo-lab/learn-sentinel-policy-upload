@@ -1,4 +1,4 @@
-package terraform.policies.friday_deploys_excluded_workspaces
+package friday_deploys_excluded_workspaces
 
 excluded_workspaces = [
     "workspace1",
