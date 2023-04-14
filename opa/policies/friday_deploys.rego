@@ -1,10 +1,9 @@
 package terraform.policies.friday_deploys
-import loader
+import data.terraform.policies.friday_deploys_excluded_workspaces
 
-json_data := loader.load_json("./test.json")
 denyDay := "Friday"
 
 deny[msg] {
   time.weekday(time.now_ns()) == denyDay
-  msg := sprintf("No deployments allowed on %v", [denyDay])
+  msg := sprintf("No deployments allowed on %v and workspace %v, [denyDay, json_data])
 }
