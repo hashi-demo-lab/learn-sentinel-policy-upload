@@ -1,4 +1,3 @@
-package terraform.policies.friday_deploys
 import data.friday_deploys_excluded_workspaces.json
 
 excludedWorkspace := friday_deploys_excluded_workspaces.excluded_workspaces
