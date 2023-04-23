@@ -1,10 +1,9 @@
 package terraform.policies.friday_deploys
 import data
 
-excludedWorkspace := data.excluded_workspaces
-denyDay := "Sunday"
+denyDay := "Monday"
 
 deny[msg] {
   time.weekday(time.now_ns()) == denyDay
-  msg := sprintf("No deployments allowed on %v and excludedWorkspace %v", [denyDay, excludedWorkspace])
+  msg := sprintf("No deployments allowed on %v and excludedWorkspace %v", [denyDay, data.excluded_workspaces])
 }
