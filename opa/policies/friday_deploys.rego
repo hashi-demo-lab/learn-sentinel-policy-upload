@@ -1,5 +1,5 @@
 package terraform.policies.friday_deploys
-
+import data
 
 excludedWorkspace := data.excluded_workspaces
 denyDay := "Sunday"
