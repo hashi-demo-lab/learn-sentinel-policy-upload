@@ -1,7 +1,7 @@
 package terraform.policies.friday_deploys
 import data.friday_deploys_excluded_workspaces
 
-excludedWorkspace := friday_deploys_excluded_workspaces.myJSON
+excludedWorkspace := friday_deploys_excluded_workspaces.excludedWorkspace
 denyDay := "Friday"
 
 deny[msg] {
