@@ -1,5 +1,5 @@
 {
-    "excluded_workspaces": [
+    "excluded_workspace": [
         "workspace1",
         "workspace2",
         "workspace3"
