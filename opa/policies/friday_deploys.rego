@@ -1,7 +1,7 @@
 package terraform.policies.friday_deploys
 
 denyDay := "Friday"
-excludedWorkspace := data.excluded_workspaces
+excludedWorkspace := data.exclusions1.excluded_workspaces
 
 deny[msg] {
   time.weekday(time.now_ns()) != denyDay
