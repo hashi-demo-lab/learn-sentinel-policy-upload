@@ -5,5 +5,5 @@ denyDay := "Friday"
 
 deny[msg] {
   time.weekday(time.now_ns()) != denyDay
-  msg := sprintf("No deployments allowed on %v and excludedWorkspace %v", [denyDay, friday_deploys_excluded_workspaces.workspaces])
+  msg := sprintf("No deployments allowed on %v and excludedWorkspace %v", [denyDay, workspaces.excluded_workspaces])
 }

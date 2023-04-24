@@ -1,4 +1,5 @@
 package friday_deploys_excluded_workspaces
+
 import data
 
-workspaces := json.unmarshal(data)
+workspaces := data.excluded_workspaces
