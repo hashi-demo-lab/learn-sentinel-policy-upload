@@ -1,6 +1,6 @@
 package terraform.policies.friday_deploys
 
-import data.policies as policy
+import data.policies.exclusion as policy
 
 allowDay := "Friday"
 
