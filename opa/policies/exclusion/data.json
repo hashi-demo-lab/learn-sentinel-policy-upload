@@ -1,7 +1,7 @@
 {
     "excluded_workspaces": [
         "workspace1",
-        "workspace2",
+        "basic-aws-ec2-vars-example",
         "workspace3"
     ]
 }
